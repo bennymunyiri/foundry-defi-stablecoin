@@ -12,7 +12,38 @@ One unique feature of the system is the ability to deposit collateral and mint D
 
 ## Getting Started
 ## Requirements
- 1. git
-     You'll know you did it right if you can run git --version and you see a response like git version x.x.x
-foundry
-You'll know you did it right if you can run forge --version and you see a response like forge 0.2.0 (816e00b 2023-03-16T00:05:26.396218Z)
+### git
+   ## You'll know you did it right if you can run 
+     git --version 
+ and you see a response like git version x.x.x
+### foundry
+ ## You'll know you did it right if you can run 
+    forge --version 
+ and you see a response like forge 0.2.0 (816e00b 2023-03-16T00:05:26.396218Z)
+
+### Quickstart
+    git clone https://github.com/bennymunyiri/foundry-defi-stablecoin
+    cd foundry-defi-stablecoin-f23 
+    forge build
+## Usage
+### Start a local node
+    make anvil
+## Deploy
+This will default to your local node. You need to have it running in another terminal in order for it to deploy.
+
+    make deploy
+
+## Deployment to a testnet or mainnet
+Setup environment variables
+You'll want to set your SEPOLIA_RPC_URL and PRIVATE_KEY as environment variables. You can add them to a .env file, similar to what you see in .env.example.
+
+PRIVATE_KEY: The private key of your account (like from metamask). NOTE: FOR DEVELOPMENT, PLEASE USE A KEY THAT DOESN'T HAVE ANY REAL FUNDS ASSOCIATED WITH IT.
+You can learn how to export it here.
+SEPOLIA_RPC_URL: This is url of the sepolia testnet node you're working with. You can get setup with one for free from Alchemy
+Optionally, add your ETHERSCAN_API_KEY if you want to verify your contract on Etherscan.
+
+## Get testnet ETH
+Head over to faucets.chain.link and get some testnet ETH. You should see the ETH show up in your metamask.
+
+## Deploy
+make deploy ARGS="--network sepolia"

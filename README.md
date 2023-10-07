@@ -9,3 +9,10 @@ Users can interact with DSCEngine through various external and public functions.
 
 One unique feature of the system is the ability to deposit collateral and mint DSC tokens in a single transaction, simplifying the user experience. Furthermore, the contract incentivizes liquidators by offering a 10% bonus on collateral assets obtained during the liquidation process.
  DSCEngine plays a critical role in maintaining the stability and integrity of the Dsce stablecoin system. It provides a mechanism for users to interact with the system securely while ensuring that the value of DSC tokens remains anchored to the US dollar through the collateralization of assets. This decentralized and algorithmically stablecoin system aims to offer users a reliable and transparent cryptocurrency option within the blockchain ecosystem.
+
+## Getting Started
+#Requirements
+1. git
+You'll know you did it right if you can run git --version and you see a response like git version x.x.x
+foundry
+You'll know you did it right if you can run forge --version and you see a response like forge 0.2.0 (816e00b 2023-03-16T00:05:26.396218Z)
